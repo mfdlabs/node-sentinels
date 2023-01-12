@@ -1,7 +1,7 @@
 {
-  "name": "@mfdlabs/node-template",
+  "name": "@mfdlabs/sentinels",
   "version": "1.0.0",
-  "description": "A Node.js template that follows NJS-32551 contracts.",
+  "description": "A Node.js package that provides a set of circuit breakers and sentinels for your application.",
   "main": "lib/index.js",
   "types": "lib/types",
   "scripts": {
@@ -17,13 +17,17 @@
     "publish-package": "npm run lint && npm run test && npm run build && npm publish --access public"
   },
   "keywords": [
-    "template"
+    "circuit breaker",
+    "sentinel",
+    "node",
+    "nodejs",
+    "typescript"
   ],
   "repository": {
     "type": "git",
-    "url": "git+github.com/mfdlabs/node-template.git"
+    "url": "git+github.com/mfdlabs/node-sentinels.git"
   },
-  "author": "JavaScript Squad <javascript-dev-squad@vmminfra.net>",
+  "author": "Nikita Petko <pekto@vmminfra.net>",
   "license": "Apache-2.0",
   "devDependencies": {
     "@types/jest": "^28.1.8",
