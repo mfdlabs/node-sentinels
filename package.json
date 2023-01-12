@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "types": "lib/types",
   "scripts": {
-    "test": "jest --config jestconfig.json --verbose --runInBand --passWithNoTests --silent=false",
+    "test": "jest --config jestconfig.json --verbose --passWithNoTests --silent=false",
     "test-full": "npm ci && npm update && npm run test",
     "build": "npm run clean && npm run compile",
     "build-full": "npm ci && npm update && npm run build",
