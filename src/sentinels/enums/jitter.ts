@@ -1,5 +1,5 @@
 /*
-   Copyright 2022 JavaScript Squad <javascript-dev-squad@vmminfra.net>
+   Copyright 2022 Nikita Petko <petko@vmminfra.net>
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
@@ -15,17 +15,27 @@
 */
 
 /*
-	File Name: index.spec.ts
-	Description: Default test specification for this package.
-	Written by: JavaScript Squad
+	File Name: jitter.ts
+	Description: The jitter enum for the exponential backoff algorithm.
+	Written by: Nikita Petko
 */
 
-import { hello_world } from '..';
+/**
+ * The jitter enum for the exponential backoff algorithm.
+ */
+export enum Jitter {
+  /**
+   * No jitter.
+   */
+  None = 0,
 
-describe('default test', () => {
-  describe('#hello_world', () => {
-    it('should return a string', () => {
-      expect(hello_world()).toBe('Hello, World!');
-    });
-  });
-});
+  /**
+   * Full jitter.
+   */
+  Full = 1,
+
+  /**
+   * Equal jitter.
+   */
+  Equal = 2,
+}
